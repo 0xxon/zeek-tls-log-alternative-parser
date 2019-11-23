@@ -2,6 +2,9 @@
 #
 # Install all needed prerequisites from a "clean" perl installation
 
+set -eu
+set -o pipefail
+
 cpan install DBD::Pg
 cpan install MooseX::Runnable
 cpan install Rose::DB::Object
